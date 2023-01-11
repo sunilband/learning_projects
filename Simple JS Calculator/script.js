@@ -1,5 +1,17 @@
 let ans=document.querySelector('.ans')
 
+//very very bad solution to not add consecutive operators but it works LOL
+let incl=["+","-","x","X","/","."]
+setInterval(
+    function () {
+        if(incl.includes(ans.textContent[ans.textContent.length-1]) && incl.includes(ans.textContent[ans.textContent.length-2])){
+           ans.textContent=ans.textContent.slice(0, -1);
+        }
+        
+    }
+,10)
+
+
 //operator event listners
 let chk=document.querySelector('.plus')
 chk.addEventListener('click',()=>ans.textContent=ans.textContent+"+")
