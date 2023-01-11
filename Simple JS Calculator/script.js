@@ -29,7 +29,7 @@ chk=document.querySelector('.dot')
 chk.addEventListener('click',()=>ans.textContent=ans.textContent+".")
 
 chk=document.querySelector('.clr')
-chk.addEventListener('click',()=>ans.textContent="0")
+chk.addEventListener('click',()=>ans.textContent=" ")
 
 //numbers event listners
 chk=document.querySelector('.one')
