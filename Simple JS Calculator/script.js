@@ -29,7 +29,7 @@ chk=document.querySelector('.dot')
 chk.addEventListener('click',()=>ans.textContent=ans.textContent+".")
 
 chk=document.querySelector('.clr')
-chk.addEventListener('click',()=>ans.textContent="0")
+chk.addEventListener('click',()=>ans.textContent=" ")
 
 //numbers event listners
 chk=document.querySelector('.one')
@@ -59,10 +59,12 @@ chk.addEventListener('click',()=>ans.textContent=ans.textContent+"8")
 chk=document.querySelector('.nine')
 chk.addEventListener('click',()=>ans.textContent=ans.textContent+"9")
 
+chk=document.querySelector('.zero')
+chk.addEventListener('click',()=>ans.textContent=ans.textContent+"0")
 //calculate
 function calculate(){
 let temp=ans.textContent
-ans.textContent=eval(temp.replaceAll("X","*"))
+ans.textContent=eval(temp.replaceAll("X","*")).toFixed(4)
 }
 chk=document.querySelector('.equ')
 chk.addEventListener('click',calculate)

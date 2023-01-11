@@ -27,7 +27,7 @@ h1{text-align: center;
     height: 89%;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows:repeat(5,auto);
+    grid-template-rows:20% repeat(4,auto);
     align-items: center;
     font-size: 30px;
     border-radius: 10px;
@@ -41,12 +41,13 @@ h1{text-align: center;
     background-color: #1e1e1e;
     height: 100%;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 55px;
     font-family:'Digital Numbers Regular';
     display: flex;
     justify-content: flex-end;
     align-items: center;
     color: #e7e7e7;
+    
     
    
    
