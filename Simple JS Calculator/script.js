@@ -64,7 +64,7 @@ chk.addEventListener('click',()=>ans.textContent=ans.textContent+"0")
 //calculate
 function calculate(){
 let temp=ans.textContent
-ans.textContent=eval(temp.replaceAll("X","*"))
+ans.textContent=eval(temp.replaceAll("X","*")).toFixed(4)
 }
 chk=document.querySelector('.equ')
 chk.addEventListener('click',calculate)
