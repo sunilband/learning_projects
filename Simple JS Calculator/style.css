@@ -43,17 +43,23 @@ h1{text-align: center;
     border-radius: 10px;
     font-size: 55px;
     font-family:'Digital Numbers Regular';
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    text-align: right ;
     align-items: center;
     color: #e7e7e7;
-    
-    
-   
-   
-
-    
+    overflow-x: auto;
+    user-select: none;
+ 
 }
+::-webkit-scrollbar{
+    width: 0;  
+    display: none;
+}
+.ans> text{
+    position: relative;
+    top: 0px;
+}
+
 .equ{
     background-color:#fe7c4a;
     height: 100%;
@@ -62,7 +68,8 @@ h1{text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px
+    border-radius: 10px;
+    cursor: pointer;
     
 }
 .box-n{
@@ -87,4 +94,5 @@ h1{text-align: center;
 }
 .bor{
     border:1px solid #939393;
+    cursor: pointer;
 }
