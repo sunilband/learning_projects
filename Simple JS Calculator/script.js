@@ -1,5 +1,12 @@
 let ans=document.querySelector('.ans')
 
+var item = document.getElementById("ans");
+
+  window.addEventListener("wheel", function (e) {
+    if (e.deltaY > 0) item.scrollLeft += 100;
+    else item.scrollLeft -= 100;
+  });
+
 //very very bad solution to not add consecutive operators but it works LOL
 let incl=["+","-","x","X","/","."]
 setInterval(
