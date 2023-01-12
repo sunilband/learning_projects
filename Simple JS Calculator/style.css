@@ -56,7 +56,6 @@ h1{text-align: center;
     display: none;
 }
 .ans> text{
-    color: red !important;
     position: relative;
     top: 0px;
 }
