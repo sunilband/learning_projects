@@ -43,18 +43,23 @@ h1{text-align: center;
     border-radius: 10px;
     font-size: 55px;
     font-family:'Digital Numbers Regular';
-    text-align: right;
+    display: grid;
+    text-align: right ;
     align-items: center;
     color: #e7e7e7;
-    overflow-x: scroll;
+    overflow-x: auto;
     user-select: none;
-    
-    
+ 
 }
 ::-webkit-scrollbar{
-    width: 0;    
+    width: 0;  
+    display: none;
 }
-
+.ans> text{
+    color: red !important;
+    position: relative;
+    top: 0px;
+}
 
 .equ{
     background-color:#fe7c4a;
